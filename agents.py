@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 llm = LLM(
-    model="mistral/mistral-small-latest",
-    api_key=os.getenv("MISTRAL_API_KEY")
+    model="gemini/gemini-2.0-flash",
+    api_key=os.getenv("GEMINI_API_KEY")
 )
 
 stock_data_agent = Agent(
